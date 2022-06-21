@@ -82,9 +82,10 @@ async function searchMovie() {
     let res = await fetch(
       `https://www.omdbapi.com/?apikey=8a493bfd&s=${movie_name}`,
       {
+        mode: 'cors',
         headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
+            'Content-Type': 'application/json',
+        }
       }
     );
     // let res1=await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
@@ -102,33 +103,36 @@ async function defaultMovie() {
     let res1 = await fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
       {
+        mode: 'cors',
         headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
+            'Content-Type': 'application/json',
+        }
       }
     );
     let res2 = await fetch(
       `https://api.themoviedb.org/3/tv/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
       {
+        mode: 'cors',
         headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
+            'Content-Type': 'application/json',
+        }
       }
     );
     let res3 = await fetch(
       `https://api.themoviedb.org/3/movie/top_rated?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
       {
+        mode: 'cors',
         headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
+            'Content-Type': 'application/json',
+        }
       }
     );
     let res4 = await fetch(
       `https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
+      { mode: 'cors',
+      headers: {
+          'Content-Type': 'application/json',
+      }
       }
     );
 
@@ -452,7 +456,7 @@ function signup(e) {
       body: userdata,
       headers: {
         "Content-Type": "application/json",
-        'Access-Control-Allow-Origin' : '*'
+        mode:'cors'
   
        
       },
@@ -483,7 +487,7 @@ function signup(e) {
   
       headers: {
         "Content-Type": "application/json",
-        'Access-Control-Allow-Origin' : '*'
+        mode:'cors'
   
       },
     })
@@ -504,7 +508,7 @@ function signup(e) {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
-        'Access-Control-Allow-Origin' : '*'
+        mode:'cors'
   
       },
     })
