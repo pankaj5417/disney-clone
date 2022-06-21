@@ -1,262 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-    *{
-        font-family: sans-serif;
-    }
-    body{
-       
-        background-color:#0c1a25;
-
-    }
-#movie-name{
-    height: 30px;
-    border: none;
-    padding: 2px;
-    outline: none;
-}
-
-#movie-div,#movie-div2,#movie-div3,#movie-div4{
-        width:98% ;
-        display: flex;
-        overflow-x: scroll;
-        
-        margin: 1% 0 0 2% ;
-
-    }
-    img{
-        width: 140px;
-        height: 180px;
-        border-radius: 5px;
-    }
-#navbarContainer{
-     width: 100%;
-     height: 110px;
-     position:sticky;
-    top: 0;
-    z-index: 100;
-}
-#nav-container{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    background-color:#0c1a25;
-   
-            
-}
-#navbar-left{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    margin: 3%;
-
-}
-.navbar-menu{
-    color: white;
-    font-weight:600;
-    margin: 0 2%;
-}
-
-#navbar-right{
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-#searchbar{
-        width: 85%;
-       margin-left: 10%;
-        align-items: center;
-    }
-    #search-logo{
-        margin:3% 0 0 19%;
-        width: 15px;
-        height: 15px;
-       
-     }
-.disney-logo{
-    height: 55px;
-    width: 26%;
-}
-.vertline{
-    color: white;
-    height: 22px;
-    width: 22px;
-    margin-right: 10px;
-}
-.search{
-    color: white;
-    background-color:#0c1a25 ;
-}
-#search-button{
-    width: 85%;
-    display: flex;
-}
-.search-drop{
-     display: flex;
-      margin:  0 5% 0 57% ;
-      
-   
-   
-  
-}
-.hline{
-    width: 97%;
-    height: 1px;
-    background-color: white;
-}
-.login-btn{
-        color: white;
-        font-weight: 400;
-        margin-right:  3%;
-
-    }
-#subscribe-btn{
-    width: 22%;
-    height: 20px;
-    padding: 3px 10px;
-    border-radius: 4px;
-    color: white;
-    background-color: blue;
-    text-align: center;
-    margin:0 3%;
-}
-.slide-img{
-    width: 100%;
-    height: 400px;
-}.slidebar1{
-    width: 98%;
+    <link rel="stylesheet" href="./movieDetails.css">
     
-    
-    padding: 2px;
-    margin: 0 3%;
-}
-.poster-hover:hover{
-    border-radius: 7px;
-    transform:scale(1.2) ;
-}
-.category-text{
-    color: white;
-    font-size: 20px;
-    margin: 5% 0 0 3% ;
-}
-
-#login{
-        width: 20%;
-        height: 180px;
-        padding: 6px;
-        position: sticky ;
-        margin: -135% 0 0 74%;
-        display: none;
-        box-shadow: -1px 1px 32px 3px rgba(40,40,57,0.77);
-       -webkit-box-shadow: -1px 1px 32px 3px rgba(40,40,57,0.77);
-       -moz-box-shadow: -1px 1px 32px 3px rgba(40,40,57,0.77);
-        border: 1px solid #070d11;
-    }
-    #signup{
-        width: 20%;
-        height: 340px;
-        padding: 6px;
-        position: sticky;
-        top: 120px;
-        box-shadow: -1px 1px 32px 3px rgba(40,40,57,0.77);
-       -webkit-box-shadow: -1px 1px 32px 3px rgba(40,40,57,0.77);
-       -moz-box-shadow: -1px 1px 32px 3px rgba(40,40,57,0.77);
-       margin: -135% 0 0 74%;
-        display: none; 
-        border: 1px solid #0d1418;
-    }
-    .inputbox input{
-        height: 20px;
-        margin: 1px 0 0 3%;
-        width:87%;
-        padding: 2px 0 0 5px;
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        background-color:#0d1418 ;
-        color: white;
-
-    }
-    .inputbox{
-        background-color: #070d11;
-    }
-    .inputbox-hr{
-        width: 95%;
-        margin-left: 0 3%;
-    }
-    .login-btn{
-        color: white;
-        font-size: 14px;
-        font-weight: 500;
-        margin: 0 2%;
-
-    }
-    
-    
-    .login-button{
-        width: 60%;
-        height: 35px;
-        margin: 5% 20%;
-        background-color: #0c1a25;
-        color: white;
-        font-size: 20px;
-        font-weight: 500;
-        border-radius: 4px;
-    }
-    .closeBtn{
-        margin:2px 88%;
-    }
-    .closeBtn:hover{
-        background-color: red;
-        color: white;
-    }
-</style>
-</head>
-<body>
-<div id="navbarContainer">
-<div id="nav-container">
-    <div id="navbar-left" >
-        <img class="vertline" src="https://icon-library.com/images/three-bar-menu-icon/three-bar-menu-icon-3.jpg" alt="">
-         <img onclick="homepage()" class="disney-logo" src="https://github.com/pankaj5417/koovs.com/blob/main/icons/disney.png?raw=true" alt="">
+  </head>
+  <body>
+    <div id="navbarContainer">
+      <div id="nav-container">
+        <div id="navbar-left">
+          <img
+            class="vertline"
+            src="https://icon-library.com/images/three-bar-menu-icon/three-bar-menu-icon-3.jpg"
+            alt=""
+          />
+          <img
+            onclick="homepage()"
+            class="disney-logo"
+            src="https://github.com/pankaj5417/koovs.com/blob/main/icons/disney.png?raw=true"
+            alt=""
+          />
           <div class="navbar-menu">TV</div>
           <div class="navbar-menu">Movies</div>
           <div class="navbar-menu">Sports</div>
           <div class="navbar-menu">Disney+</div>
-
         </div>
 
-    <div id="navbar-right">
-        <div id="searchbar">
+        <div id="navbar-right">
+          <div id="searchbar">
             <div id="search-button">
-                <input oninput="debounce(searchMovie,1000)" type="text" class="search" id="movie-name" placeholder="enter movie name" >
-                <img id="search-logo" src="https://icon-library.com/images/svg-search-icon/svg-search-icon-9.jpg" alt="">  
+              <input
+                oninput="debounce(searchMovie,1000)"
+                type="text"
+                class="search"
+                id="movie-name"
+                placeholder="enter movie name"
+              />
+              <img
+                id="search-logo"
+                src="https://icon-library.com/images/svg-search-icon/svg-search-icon-9.jpg"
+                alt=""
+              />
             </div>
-            
-            <div class="hline"></div>
 
+          </div>
 
-         </div>
-       
-        <div id="subscribe-btn">SUBSCRIBE</div>
-        <div class="login-btn" id="login-btn" >LOGIN</div>
-        <div id="signup-btn" class="login-btn" >SIGNUP</div>
-   
+          <div id="subscribe-btn">SUBSCRIBE</div>
+          <div class="login-btn" id="login-btn">LOGIN</div>
+          <div id="signup-btn" class="login-btn">SIGNUP</div>
+        </div>
+      </div>
+      <div class="search-drop" id="search-dropdown"></div>
     </div>
 
-</div>
-<div class="search-drop" id="search-dropdown"></div>
-</div>
+    <div class="slidebar1" id="slidebar"></div>
 
-<div class="slidebar1" id="slidebar"></div>
-
-<div class="category-text">Latest and Trending</div>
-<div id="movie-div"></div>
-<div class="category-text">Popular Tv shows</div>
+    <div class="category-text">Latest and Trending</div>
+    <div id="movie-div"></div>
+    <div class="category-text">Popular Tv shows</div>
     <div id="movie-div2"></div>
     <div class="category-text">Top Rated Movies</div>
     <div id="movie-div3"></div>
@@ -265,576 +69,63 @@
 
     <div class="signdiv" id="signup">
         <form onsubmit="signup(event)" id="signup-form" action="">
-            <button id="closeBtn1" class="closeBtn"> ✖</button>
-        <div class="inputbox">
-
-        
-            <input type="text" id="name" placeholder="Enter Name"  >
-            <hr>
-            <input type="email" id="email" placeholder="Enter email"  >
-            <hr>
-            <input type="password" id="password" placeholder="Enter password"  >
-            <hr>
-            <input type="number" id="mobile" placeholder="Enter mobile"  >
-            <hr>
-            <input type="text" id="username" placeholder="Enter username"  >
-            <hr>
-            <input type="text" id="description" placeholder="Enter description"  >
-            <hr>
-        </div>
-        <input type="submit" id="btn1" class="login-button" value="Sign Up">
-
+          <button id="closeBtn1" class="closeBtn">✖</button>
+          <div class="inputbox">
+            <input type="text" id="name" placeholder="Enter Name" />
+            <div class="inputbox-hr" ></div>
+            <br>
+            <input type="email" id="email" placeholder="Enter email" />
+            <div class="inputbox-hr" ></div>
+            <br>
+            <input type="password" id="password" placeholder="Enter password" />
+            <div class="inputbox-hr" ></div>
+            <br>
+            <input type="number" id="mobile" placeholder="Enter mobile" />
+            <div class="inputbox-hr" ></div>
+            <br>
+            <input type="text" id="username" placeholder="Enter username" />
+            <div class="inputbox-hr" ></div>
+            <br>
+            <input type="text" id="description" placeholder="Enter description" />
+            <div class="inputbox-hr" ></div>
+          </div>
+          <br>
+          <input type="submit" id="btn1" class="login-button" value="Sign Up" />
         </form>
-    </div>
-
-    <div class="logindiv" id="login">
-        <button id="closeBtn2" class="closeBtn"> ✖</button>
-
+      </div>
+  
+      <div class="logindiv" id="login">
+        <button id="closeBtn2" class="closeBtn">✖</button>
+  
+        <h3 style="color:white;margin-left: 3px;">Login to continue</h3>
         <form onsubmit="login(event)" id="login-form" action="">
           <div class="inputbox">
-            <input type="text" id="username2" placeholder="Enter username"  >
-            <hr class="inputbox-hr">
-            <input type="password" id="password2" placeholder="Enter Password"  >
-            <hr class="inputbox-hr">
-        </div>
-            <input type="submit" id="btn2" class="login-button" value="Login">
-        
+            <input type="text" id="username2" placeholder="Enter username" />
+            <br>
+            <div class="inputbox-hr" ></div>
+            <br>
+           <input type="password" id="password2" placeholder="Enter Password" />
+            <br>
+            <div class="inputbox-hr" ></div>
+            <br>
+                  <h2 style="text-align:center ; color: white;">OR</h2>
+                  <br>
+            <span style="color: white;">+91</span><input type="number" id="password2" placeholder="Enter Mobile number" />
+            <br>
+            <div class="inputbox-hr" ></div>
+  
+            <br>
+          </div>
+          <input type="submit" id="btn2" class="login-button" value="Login" />
         </form>
-    </div>
-     
+      </div>
+
     <div id="productDetail"></div>
-</body>
+  </body>
 </html>
-<script>
+<script src="movieDetails.js">
+  //getting data from localStorage and mapping it with api call data
 
-//getting data from localStorage and mapping it with api call data
-    
- //var productDetail=document.getElementById("productDetail")
-     var slidebar=document.getElementById("slidebar")
-      var products=JSON.parse(localStorage.getItem('mcart'))
-       products.forEach(function(prod){
-       console.log(prod.Title)
-    async function getMovie(){
-        
-        try{
-        let res=await fetch(`http://www.omdbapi.com/?apikey=8a493bfd&t=${prod.Title}`)
-       // let res1=await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
-       // let data1=await res1.json()
-        let data=await res.json()
-        console.log(data)
-        let mvdata=data
-        showMovies(mvdata)
-        }
-       catch(res){
-            console.log(res)
-        }
-        
-    }
-    getMovie()
-})
-
-function showMovies(product){
-    console.log(product.Title)
-       
-      //  prod.forEach(function(product){
-
-    // var movie_div=document.getElementById("movie-div");
-
-     let div=document.createElement("div");
-     let div2=document.createElement("div")
-     let mv_title=document.createElement("p");
-    mv_title.innerText="Title :" +product.Title;
-   let mv_rating=document.createElement("p");
-   mv_rating.innerText="Imdb :"+product.imdbRating;
-   let poster=document.createElement("img");
-   poster.src=product.Poster;
-   let lang=document.createElement("p");
-   lang.innerText="Language :"+ product.Language;
-   let runtime=document.createElement("p");
-   runtime.innerText="Runtime :"+ product.Runtime;
-   let actor=document.createElement("p");
-   actor.innerText="Actors :"+ product.Actors;
-   let genre=document.createElement("p");
-   let recommend=document.createElement("p")
-   recommend.innerText  ="Recommended";
-   genre.innerText="Genre :"+product.Genre;
-
-   div.style.width="98%"
-   div.style.height="400px"
-   
-   
-   mv_title.style.fontSize="18px"
-  // mv_title.style.display="flex"
-  
-  
-  
-   poster.style.width="100%"
-   poster.style.height="100%"
-   div.append(poster)
-   div2.append(mv_title,genre,lang,actor,runtime,mv_rating)
-slidebar.append(div,div2)
-//slidebar.style.display="flex"
-slidebar.style.width="95%"
-slidebar.style.margin="auto"
-div2.style.color='white'
-div2.style.marginTop="-25%"
-div2.style.marginLeft="3%"
-//})
-      }
-
-
-     // showMovie(products)
-
-
-     
- var searchDropdown=document.getElementById("search-dropdown")
-
-
-
-
- async function searchMovie(){
-        try{
-            let movie_name=document.getElementById("movie-name").value
-        let res=await fetch(`https://www.omdbapi.com/?apikey=8a493bfd&s=${movie_name}`)
-       // let res1=await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
-       // let data1=await res1.json()
-        let data=await res.json()
-        console.log(data)
-        let mvdata=data.Search
-        showMovie(mvdata)
-        }
-       catch(res){
-            console.log(res)
-        }
-        
-    }
-    async function defaultMovie(){
-        try{
-            let res1=await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
-            let res2=await fetch(`https://api.themoviedb.org/3/tv/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
-            let res3=await fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
-            let res4=await fetch(`https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
-
-      
-            let data1=await res1.json()
-            let data2=await res2.json()
-            let data3=await res3.json()
-            let data4=await res4.json()
-       showDefault(data1.results)
-       showDefault2(data2.results)
-       showDefault3(data3.results)
-       showDefault4(data4.results)
-       console.log(data1.results)
-        }catch(res){
-            console.log(res)
-        }
-    }
-    defaultMovie()
-   
-    var movie_div=document.getElementById("movie-div");
-    var movie_div2=document.getElementById("movie-div2")
-    var movie_div3=document.getElementById("movie-div3")
-    var movie_div4=document.getElementById("movie-div4")
-
-function showDefault(prod1){
- // movie_div.innerHTML=null;
-
-if(prod1==undefined){
-let giferr=document.createElement("img") 
-giferr.src="https://miro.medium.com/max/1400/1*zBFBJktPD3_z0S_35kO5Hg.gif"  
-movie_div.append(giferr) 
-} 
-prod1.forEach(function(product){
-
-
-let div=document.createElement("div");
-let mv_title=document.createElement("p");
-mv_title.innerText="Title :" +product.original_title;
-let mv_rating=document.createElement("p");
-mv_rating.innerText="Imdb :"+product.vote_average;
-let poster=document.createElement("img");
-poster.src=`https://image.tmdb.org/t/p/w500/${product.poster_path}`;
-let lang=document.createElement("p");
-lang.innerText="Language :"+ product.original_language;
-let runtime=document.createElement("p");
-runtime.innerText="Runtime :"+ product.Runtime;
-let actor=document.createElement("p");
-actor.innerText="Actors :"+ product.Actors;
-let genre=document.createElement("p");
-let recommend=document.createElement("p")
-recommend.innerText  ="Recommended";
-genre.innerText="Genre :"+ product.Genre;
-poster.className="poster-hover"
-
-div.append(poster)   
-div.style.margin="1%"  
-movie_div.append(div)
-//if(product.vote_average>8.5){
- //   div.append(poster,mv_title,genre,lang,actor,runtime,mv_rating)     
-
-
-// console.log(mv)
-//}else{
-//div.append(poster,mv_title,genre,lang,actor,runtime,mv_rating)
-
-// console.log(mv)
-//}
-
-    //div.append(poster,mv_title,genre,lang,actor,runtime,mv_rating,recommend)  
-    poster.onclick=function(){
-      showData(product)
-      window.location.href="defaultMovie.html"
-    }
-       
-
-})
-}
-
-
-//show default2
-
-function showDefault2(prod1){
- // movie_div.innerHTML=null;
-
-if(prod1==undefined){
-let giferr=document.createElement("img") 
-giferr.src="https://miro.medium.com/max/1400/1*zBFBJktPD3_z0S_35kO5Hg.gif"  
-movie_div.append(giferr) 
-} 
-prod1.forEach(function(product){
-
-
-let div=document.createElement("div");
-let mv_title=document.createElement("p");
-
-let poster=document.createElement("img");
-poster.src=`https://image.tmdb.org/t/p/w500/${product.poster_path}`;
-poster.className="poster-hover"
-
-div.append(poster)
-div.style.margin="1%"     
-movie_div2.append(div)
-
-    //div.append(poster,mv_title,genre,lang,actor,runtime,mv_rating,recommend)  
-    poster.onclick=function(){
-      showData(product)
-      window.location.href="defaultMovie.html"
-    }
-})
-}
-
-//default movie3
-
-function showDefault3(prod1){
- // movie_div.innerHTML=null;
-
-if(prod1==undefined){
-let giferr=document.createElement("img") 
-giferr.src="https://miro.medium.com/max/1400/1*zBFBJktPD3_z0S_35kO5Hg.gif"  
-movie_div.append(giferr) 
-} 
-prod1.forEach(function(product){
-
-
-let div=document.createElement("div");
-let mv_title=document.createElement("p");
-
-let poster=document.createElement("img");
-poster.src=`https://image.tmdb.org/t/p/w500/${product.poster_path}`;
-poster.className="poster-hover"
-
-div.append(poster)
-div.style.margin="1%"     
-movie_div3.append(div)
-
-    //div.append(poster,mv_title,genre,lang,actor,runtime,mv_rating,recommend)  
-    poster.onclick=function(){
-      showData(product)
-      window.location.href="defaultMovie.html"
-    }
-})
-}
-
-//default movie 4
-
-function showDefault4(prod1){
- // movie_div.innerHTML=null;
-
-if(prod1==undefined){
-let giferr=document.createElement("img") 
-giferr.src="https://miro.medium.com/max/1400/1*zBFBJktPD3_z0S_35kO5Hg.gif"  
-movie_div.append(giferr) 
-} 
-prod1.forEach(function(product){
-
-
-let div=document.createElement("div");
-let mv_title=document.createElement("p");
-
-let poster=document.createElement("img");
-poster.src=`https://image.tmdb.org/t/p/w500/${product.poster_path}`;
-poster.className="poster-hover"
-
-div.append(poster)
-div.style.margin="1%"     
-movie_div4.append(div)
-
-    //div.append(poster,mv_title,genre,lang,actor,runtime,mv_rating,recommend)  
-    poster.onclick=function(){
-      showData(product)
-      window.location.href="defaultMovie.html"
-    }
-})
-}
-
-
-
-     //search movie
-
-    function showMovie(prod){
-        searchDropdown.innerHTML=null;
-
-        if(prod==undefined){
-        let giferr=document.createElement("img") 
-        giferr.src="https://miro.medium.com/max/1400/1*zBFBJktPD3_z0S_35kO5Hg.gif"  
-        movie_div.append(giferr) 
-        } 
-        prod.forEach(function(product){
-
-    // var movie_div=document.getElementById("movie-div");
-
-     let div=document.createElement("div");
-     let mv_title=document.createElement("p");
-    mv_title.innerText="Title :" +product.Title;
-   let mv_rating=document.createElement("p");
-   mv_rating.innerText="Imdb :"+product.imdbRating;
-   let poster=document.createElement("img");
-   poster.src=product.Poster;
-   let lang=document.createElement("p");
-   lang.innerText="Language :"+ product.Language;
-   let runtime=document.createElement("p");
-   runtime.innerText="Runtime :"+ product.Runtime;
-   let actor=document.createElement("p");
-   actor.innerText="Actors :"+ product.Actors;
-   let genre=document.createElement("p");
-   let recommend=document.createElement("p")
-   recommend.innerText  ="Recommended";
-   genre.innerText="Genre :"+ product.Genre;
-
-   div.style.width="95%"
-   div.style.height="160px"
-   div.style.display="flex"
-   div.style.margin="5px"
-   div.style.backgroundColor="#183144"
-  // poster.style.marginLeft="10px"
-   poster.style.margin="3%"
-   poster.style.width="10%"
-   searchDropdown.style.height="400px"
-   searchDropdown.style.display="flex"
-   searchDropdown.style.flexDirection="column"
-   searchDropdown.style.width="22%"
-   searchDropdown.style.overflow="scroll"
-   searchDropdown.style.backgroundColor="#0c1a20"
-   mv_title.style.fontSize="13px"
-  // mv_title.style.display="flex"
-   mv_title.style.marginLeft="15px"
-   mv_title.style.width="70%"
-   mv_title.style.marginTop="4px"
-   mv_title.style.marginTop="3%"
-   mv_title.style.color="white"
-
-  
-  
-   poster.style.width="150px"
-   poster.style.height="70px"
-   div.append(poster,mv_title)
-  searchDropdown.appendChild(div)
-   if(product.imdbRating>8.5){
-    //div.append(poster,mv_title,genre,lang,actor,runtime,mv_rating,recommend)  
-    poster.onclick=function(){
-      showData(product)
-      window.location.href="movieDetails.html"
-   } 
-  
-  
-  // searchDropdown.append(poster,mv_title)
-   //console.log(mv)
-   }else{
-   // poster.append(mv_title,genre,lang,actor,runtime,mv_rating)     
-    //searchDropdown.append(poster,mv_title)
-   poster.onclick=function(){
-      showData(product)
-      window.location.href="movieDetails.html"
-
-   }    
-
-   console.log(movie_div)
-     }
-  })
-     
-}
-
-
-
-
-//debounce
-    var timerid;
-
-    function debounce(func,delay) {
-        if(timerid){
-            clearTimeout(timerid)
-        }
-        timerid=setTimeout(function () {
-        func()
-            
-        },delay)
-    }
-
-
-    if(localStorage.getItem('mcart')===null){
-    localStorage.setItem('mcart',JSON.stringify([]))
-}
-function showData(p){
-  var products_cart=JSON.parse(localStorage.getItem('mcart'))
-  //products_cart.push(p)
-  products_cart.pop()
-    products_cart.push(p)
-
-localStorage.setItem('mcart',JSON.stringify(products_cart)) 
-  
-
-//localStorage.setItem('cart',JSON.stringify(products_cart)) 
-
-  
-}
-
-
-
-//login & signup
-var signupBtn=document.getElementById("signup-btn")
-var loginBtn=document.getElementById("login-btn")
-//signupBtn.addEventListener("click",signup)
-//loginBtn.addEventListener("click",login)
-
-let closeBtn2=document.getElementById("closeBtn2")
-closeBtn2.onclick=function(){
-    let login1=document.getElementById("login")
-   
-        login1.style.display="none"
-    }
-    let closeBtn1=document.getElementById("closeBtn1")
-closeBtn1.onclick=function(){
-    let login1=document.getElementById("signup")
-   
-        login1.style.display="none"
-    }
-
-   loginBtn.onclick= function(){
-    let loginshow=document.getElementById("login")
-    loginshow.style.display="block"
-   // loginshow.style.background="#0c1a25"
-}
-signupBtn.onclick=function(){
-    let signupshow=document.getElementById("signup")
-    signupshow.style.display="block"
-   // signupshow.style.backgroundColor="#0c1a25"
-}
-var form=document.getElementById("signup-form")
-   
-
-function signup(e){
-        e.preventDefault()
-    let userdata={
-        name:form.name.value,
-        email:form.name.value,
-        password:form.password.value,
-        username:form.username.value,
-        description:form.description.value,
-        mobile:form.mobile.value
-    }
-    userdata=JSON.stringify(userdata)
-    fetch("http://masai-api-mocker.herokuapp.com/auth/register",{
-        method:"POST",
-        body:userdata,
-        headers:{
-            "Content-Type":"application/json"
-        },
-    })
-    .then((res)=>{
-        return res.json()
-    })
-    .then((res)=>{
-        console.log(res)
-    })
-    .catch((err)=>{
-        console.log(err)
-    })
-
-
-    }
-
-     function login(e){
-        e.preventDefault()
-        let form1=document.getElementById("login-form")
-     let userdata={
-        username:form1.username2.value,
-        password:form1.password2.value,
-        
-    }
-   let data_to_send=JSON.stringify(userdata)
-
-   fetch("http://masai-api-mocker.herokuapp.com/auth/login",{
-  method:"POST",
-  body:data_to_send,
-
- headers:{
-            "Content-Type":"application/json"
-        },
-
-})
-.then((res)=>{
-   return res.json()
-})
-.then((res)=>{
-    console.log(res)
-    fetchData(userdata.username,res.token)
-})
-.catch((err)=>{
-    console.log(err)
-})
-}
-
-function fetchData(username,token){
-    fetch(`http://masai-api-mocker.herokuapp.com/user/${username}`,{
-        headers:{
-            "Content-Type":"application/json",
-          Authorization:`Bearer ${token}`,
-        },
-    })
-    .then((res)=>{
-   return res.json()
-})
-.then((res)=>{
-    console.log(res)
-    console.log(res.name)
-    if(res.name!=""){
-        let subBtn=document.getElementById("login-btn")
-        subBtn.innerText="Hello!,"+" "+res.name
-        subBtn.style.fontSize="14px"
-        subBtn.style.fontWeight="300"
-        let signupBtn=document.getElementById("signup-btn")
-        signupBtn.style.display="none"
-    }
-})
-.catch((err)=>{
-    console.log(err)
-})
-}
-
-
-
-function homepage(){
-    window.location.href="movie3.html"
-}
+  //var productDetail=document.getElementById("productDetail")
  
 </script>

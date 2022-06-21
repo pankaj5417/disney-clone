@@ -1,0 +1,230 @@
+* {
+  font-family: sans-serif;
+}
+body {
+  background-color: #0c1a25;
+}
+#movie-name {
+  height: 30px;
+  border: none;
+  padding: 2px;
+  outline: none;
+}
+
+#movie-div,
+#movie-div2,
+#movie-div3,
+#movie-div4 {
+  width: 98%;
+  display: flex;
+  overflow-x: scroll;
+
+  margin: 1% 0 0 2%;
+}
+img {
+  width: 140px;
+  height: 180px;
+  border-radius: 5px;
+}
+#navbarContainer {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+#nav-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background-color: #0c1a25;
+}
+#navbar-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: 3%;
+}
+.navbar-menu {
+  color: white;
+  font-weight: 600;
+  margin: 0 2%;
+}
+
+#navbar-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#search-logo {
+  margin-left: -22px;
+  width: 16px;
+  height: 16px;
+  color: #0c1a25;
+}
+.disney-logo {
+  height: 55px;
+  width: 26%;
+}
+.vertline {
+  color: white;
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+}
+#search-button {
+  width: 380px;
+  height: 40px;
+}
+#search-button input {
+  position: relative;
+  width: 340px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  outline: 0;
+  padding: 0 28px 0 0px;
+  border-radius: 0;
+  background: none;
+  -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+
+.search-drop {
+  display: flex;
+  margin: 0 8% 0 52%;
+}
+.hline {
+  width: 97%;
+  height: 1px;
+  background-color: white;
+}
+.login-btn {
+  color: white;
+  font-weight: 400;
+  margin-right: 3%;
+}
+#subscribe-btn {
+  width: 130px;
+  height: 23px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 7px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #1f80e0;
+  /* text-align: center; */
+  justify-content: center;
+  /* margin-left: 5%; */
+}
+.slide-img {
+  width: 97%;
+  height: 340px;
+  margin-top: 3px;
+}
+.slidebar1 {
+  width: 98%;
+
+  padding: 2px;
+  margin: 0 3%;
+}
+.poster-hover:hover {
+  border-radius: 15px;
+  transform: scale(1.15);
+}
+.category-text {
+  color: white;
+  font-size: 20px;
+  margin: 2% 0 0 3%;
+}
+.category-text1 {
+  color: white;
+  font-size: 20px;
+  margin: 13% 0 0 3%;
+}
+#login {
+  width: 35%;
+  height: 380px;
+  padding: 17px;
+  position: fixed;
+  border-radius: 3px;
+  top: 270px;
+  left: 38%;
+  background-color: #0c111b;
+  display: none;
+  box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
+  -webkit-box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
+  -moz-box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
+  border: 1px solid #070d11;
+}
+#signup {
+  width: 35%;
+  height: 380px;
+  padding: 17px;
+  position: fixed;
+  border-radius: 3px;
+  top: 270px;
+  left: 38%;
+  background-color: #0c111b;
+  box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
+  -webkit-box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
+  -moz-box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
+  z-index: 9999;
+  display: none;
+  border: 1px solid #0d1418;
+}
+.inputbox input {
+  height: 20px;
+  margin: 1px 0 0 3%;
+  width: 87%;
+  padding: 2px 0 0 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #0c111b;
+  color: white;
+}
+.inputbox {
+  background-color: #070d11;
+}
+.inputbox-hr {
+  width: 93%;
+  height: 1px;
+  margin-left: 0 3%;
+  color: white;
+  background-color: #1f80e0;
+}
+.login-btn {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 2%;
+}
+
+.login-button {
+  width: 50%;
+  height: 45px;
+  margin: 5% 20%;
+  background-color: #1f80e0;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.closeBtn {
+  margin: 2px 88%;
+}
+.closeBtn:hover {
+  background-color: red;
+  color: white;
+}
