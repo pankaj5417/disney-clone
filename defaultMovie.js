@@ -8,9 +8,10 @@ products.forEach(function (prod) {
       let res1 = await fetch(
         `https://api.themoviedb.org/3//movie/${prod.id}?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
         {
-            headers: {
-              "Access-Control-Allow-Origin": "*",
-            },
+           mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json',
+        }
           }
       );
       // let res1=await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)

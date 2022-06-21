@@ -5,7 +5,7 @@ products.forEach(function (prod) {
   async function getMovie() {
     try {
       let res = await fetch(
-        `http://www.omdbapi.com/?apikey=8a493bfd&t=${prod.Title}`,
+        `https://www.omdbapi.com/?apikey=8a493bfd&t=${prod.Title}`,
         {
             mode: 'cors',
             headers: {
