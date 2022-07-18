@@ -49,7 +49,7 @@ function showMovies(product) {
   //poster.className="poster-hover"
 
   div.style.width = "98%";
-  div.style.height = "400px";
+  div.style.height = "460px";
 
   mv_title.style.fontSize = "18px";
   // mv_title.style.display="flex"
@@ -58,15 +58,14 @@ function showMovies(product) {
   poster.style.height = "100%";
   div.append(poster);
   div2.append(mv_title, genre, lang, runtime, mv_rating, overview);
+  slidebar.style.position="relative"
+
   slidebar.append(div, div2);
-  //slidebar.style.display="flex"
-  slidebar.style.width = "95%";
-  slidebar.style.margin = "auto";
-  div2.style.color = "white";
-  div2.style.marginTop = "-30%";
-  div2.style.marginLeft = "3%";
-  div2.style.width = "67%";
-  //})
+  slidebar.style.width = "98%";
+  div2.style.fontWeight="600"
+  div2.style.paddingLeft="10px"
+  div2.classList.add("movieDetails")
+  
 }
 
 // showMovie(products)

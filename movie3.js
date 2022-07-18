@@ -1,5 +1,4 @@
 let images = [
-  // " https://github.com/pankaj5417/koovs.com/blob/main/icons/slideimg1.jpg?raw=true",
   "https://github.com/pankaj5417/koovs.com/blob/main/icons/slideimg2.jpg?raw=true",
   "https://github.com/pankaj5417/koovs.com/blob/main/icons/slideimg3.jpg?raw=true",
   "https://github.com/pankaj5417/koovs.com/blob/main/icons/slideimg4.jpeg?raw=true",
@@ -15,6 +14,7 @@ function startSlideshow() {
   let count = 0;
   let img = document.createElement("img");
   img.className = "slide-img";
+  img.style.height = "460px";
 
   img.src = images[0];
   container.append(img);
@@ -27,8 +27,8 @@ function startSlideshow() {
     }
     let img = document.createElement("img");
     img.className = "slide-img";
+    img.style.height = "460px";
     img.src = images[count];
-    img.style.height = "400px";
     container.style.marginTop = "80px";
     container.append(img);
     count++;

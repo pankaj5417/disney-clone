@@ -55,6 +55,8 @@ img {
   width: 50%;
   display: flex;
   align-items: center;
+  margin-left: 100px;
+
 }
 
 #search-logo {
@@ -150,7 +152,16 @@ img {
 .category-text1 {
   color: white;
   font-size: 20px;
-  margin: 13% 0 0 3%;
+  margin: 50px 0 0 3%;
+}
+.movieDetails{
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 97%; 
+  
 }
 #login {
   width: 35%;
@@ -227,4 +238,16 @@ img {
 .closeBtn:hover {
   background-color: red;
   color: white;
+}
+@media only screen and (max-width: 800px) {
+  #search-button {
+    width: 250px;
+    height: 40px;
+  
+}
+#search-button input{
+  width: 210px;
+
+}
+
 }

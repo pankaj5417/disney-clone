@@ -46,25 +46,24 @@ function showMovies(product) {
   let recommend = document.createElement("p");
   recommend.innerText = "Recommended";
   genre.innerText = "Genre :" + product.Genre;
-
+  
   div.style.width = "98%";
-  div.style.height = "400px";
+  div.style.height = "460px";
 
   mv_title.style.fontSize = "18px";
-  // mv_title.style.display="flex"
 
   poster.style.width = "100%";
   poster.style.height = "100%";
   div.append(poster);
+  slidebar.style.position="relative"
   div2.append(mv_title, genre, lang, actor, runtime, mv_rating);
   slidebar.append(div, div2);
-  //slidebar.style.display="flex"
-  slidebar.style.width = "95%";
-  slidebar.style.margin = "auto";
-  div2.style.color = "white";
-  div2.style.marginTop = "-25%";
-  div2.style.marginLeft = "3%";
-  //})
+  slidebar.style.width = "98%";
+  
+  div2.style.fontWeight="600"
+  div2.style.paddingLeft="10px"
+  div2.classList.add("movieDetails")
+  
 }
 
 // showMovie(products)
