@@ -6,12 +6,7 @@ products.forEach(function (prod) {
     try {
       let res = await fetch(
         `https://www.omdbapi.com/?apikey=8a493bfd&t=${prod.Title}`,
-        {
-            mode: 'cors',
-            headers: {
-                'Content-Type': 'application/json',
-            }
-          }
+       
       );
       // let res1=await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
       // let data1=await res1.json()
@@ -80,13 +75,8 @@ async function searchMovie() {
   try {
     let movie_name = document.getElementById("movie-name").value;
     let res = await fetch(
-      `https://www.omdbapi.com/?apikey=8a493bfd&s=${movie_name}`,
-      {
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-      }
+      `http://www.omdbapi.com/?apikey=8a493bfd&s=${movie_name}`,
+      
     );
     // let res1=await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
     // let data1=await res1.json()
