@@ -72,21 +72,11 @@ async function defaultMovie() {
     );
     let res3 = await fetch(
       `https://api.themoviedb.org/3/movie/top_rated?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      {
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-      }
+      
     );
     let res4 = await fetch(
       `https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      {
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-      }
+      
     );
 
     let data1 = await res1.json();
