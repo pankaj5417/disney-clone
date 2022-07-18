@@ -74,10 +74,10 @@ async function defaultMovie() {
       `https://api.themoviedb.org/3/movie/top_rated?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
       
     );
-    let res4 = await fetch(
-      `https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
+//     let res4 = await fetch(
+//       `https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
       
-    );
+//     );
 
     let data1 = await res1.json();
     let data2 = await res2.json();
