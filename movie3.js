@@ -64,40 +64,20 @@ async function defaultMovie() {
   try {
     let res1 = await fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      {
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-      }
+      
     );
     let res2 = await fetch(
       `https://api.themoviedb.org/3/tv/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      {
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-      }
+      
     );
     let res3 = await fetch(
       `https://api.themoviedb.org/3/movie/top_rated?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      {
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-      }
+      
     );
-    let res4 = await fetch(
-      `https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      {
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-      }
-    );
+//     let res4 = await fetch(
+//       `https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
+      
+//     );
 
     let data1 = await res1.json();
     let data2 = await res2.json();
