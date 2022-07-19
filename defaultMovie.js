@@ -278,6 +278,7 @@ function showMovie(prod) {
 
   if (prod == undefined) {
     let giferr = document.createElement("img");
+    giferr.style.width="99%"
     giferr.src =
       "https://miro.medium.com/max/1400/1*zBFBJktPD3_z0S_35kO5Hg.gif";
     searchDropdown.append(giferr);
@@ -308,7 +309,6 @@ function showMovie(prod) {
     div.style.display = "flex";
     div.style.margin = "5px";
     div.style.backgroundColor = "#183144";
-    // poster.style.marginLeft="10px"
     poster.style.margin = "3%";
     poster.style.width = "10%";
     searchDropdown.style.height = "400px";
@@ -318,7 +318,6 @@ function showMovie(prod) {
     searchDropdown.style.overflow = "scroll";
     searchDropdown.style.backgroundColor = "#0c1a20";
     mv_title.style.fontSize = "13px";
-    // mv_title.style.display="flex"
     mv_title.style.marginLeft = "15px";
     mv_title.style.width = "70%";
     mv_title.style.marginTop = "4px";

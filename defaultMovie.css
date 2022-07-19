@@ -58,7 +58,9 @@ img {
   margin-left: 100px;
 
 }
-
+#searchbar{
+  position: relative;
+}
 #search-logo {
   margin-left: -22px;
   width: 16px;
@@ -102,7 +104,9 @@ img {
 
 .search-drop {
   display: flex;
-  margin: 0 8% 0 52%;
+  position: absolute;
+  left: -10px;
+  
 }
 .hline {
   width: 97%;
@@ -172,6 +176,7 @@ img {
   top: 270px;
   left: 38%;
   background-color: #0c111b;
+  z-index: 1999;
   display: none;
   box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
   -webkit-box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);

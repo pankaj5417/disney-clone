@@ -34,6 +34,7 @@ img {
   z-index: 100;
 }
 #nav-container {
+  position: relative;
   width: 100%;
   height: 80px;
   display: flex;
@@ -74,12 +75,15 @@ img {
   width: 22px;
   margin-right: 10px;
 }
+#searchbar{
+  position: relative;
+}
 #search-button {
   width: 380px;
   height: 40px;
 }
 #search-button input {
-  position: relative;
+  /* position: relative; */
   width: 340px;
   height: 32px;
   border: none;
@@ -101,7 +105,9 @@ img {
 
 .search-drop {
   display: flex;
-  margin: 0 8% 0 52%;
+  position: absolute;
+  left: -10px;
+  
 }
 
 #subscribe-btn {
@@ -147,6 +153,7 @@ img {
   border-radius: 3px;
   top: 270px;
   left: 38%;
+  z-index: 1999;
   background-color: #0c111b;
   display: none;
   box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
