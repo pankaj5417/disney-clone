@@ -35,7 +35,8 @@ A mini project of disney-hotstar made by me.
     ```
 ### Website Flow
 
-*   
+*  Glimpse of website
+
     ![mainpage](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
     
    
