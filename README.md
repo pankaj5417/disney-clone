@@ -33,10 +33,12 @@ A mini project of disney-hotstar made by me.
     ``` 
     git clone https://github.com/pankaj5417/disney-clone
     ```
-### Website Flow
+## Website Flow
 
-
+### Landing page
     ![mainpage](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
+    
+### movie Details page    
     
     ![mainpage2](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
         
