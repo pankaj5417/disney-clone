@@ -43,8 +43,7 @@ async function getMovie() {
   try {
     let movie_name = document.getElementById("movie-name").value;
     let res = await fetch(
-      `https://www.omdbapi.com/?apikey=8a493bfd&s=${movie_name}`,
-      
+      `https://www.omdbapi.com/?apikey=8a493bfd&s=${movie_name}`
     );
     // let res1=await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
     // let data1=await res1.json()
@@ -63,20 +62,16 @@ async function getMovie() {
 async function defaultMovie() {
   try {
     let res1 = await fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      
+      `https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`
     );
     let res2 = await fetch(
-      `https://api.themoviedb.org/3/tv/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      
+      `https://api.themoviedb.org/3/tv/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`
     );
     let res3 = await fetch(
-      `https://api.themoviedb.org/3/movie/top_rated?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`
     );
     let res4 = await fetch(
-      `https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      
+      `https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`
     );
 
     let data1 = await res1.json();
@@ -258,8 +253,6 @@ function showMovie(prod) {
     movie_div.append(giferr);
   }
   prod.forEach(function (product) {
-    // var movie_div=document.getElementById("movie-div");
-
     let div = document.createElement("div");
     let mv_title = document.createElement("p");
     mv_title.innerText = "Title :" + product.Title;
@@ -283,7 +276,6 @@ function showMovie(prod) {
     div.style.display = "flex";
     div.style.margin = "5px";
     div.style.backgroundColor = "#183144";
-    // poster.style.marginLeft="10px"
     poster.style.margin = "3%";
     poster.style.width = "10%";
     searchDropdown.style.height = "400px";
@@ -293,7 +285,6 @@ function showMovie(prod) {
     searchDropdown.style.overflow = "scroll";
     searchDropdown.style.backgroundColor = "#0c1a20";
     mv_title.style.fontSize = "13px";
-    // mv_title.style.display="flex"
     mv_title.style.marginLeft = "15px";
     mv_title.style.width = "70%";
     mv_title.style.marginTop = "4px";
@@ -326,6 +317,13 @@ function showMovie(prod) {
     }
   });
 }
+
+window.addEventListener("click", function (e) {
+  var x = document.querySelector("#search-dropdown");
+  if (event.target != document.querySelector(".search-drop")) {
+    x.style.display = "none";
+  }
+});
 
 //debounce
 var timerid;
@@ -405,7 +403,7 @@ function signup(e) {
     body: userdata,
     headers: {
       "Content-Type": "application/json",
-     mode:'cors',
+      mode: "cors",
     },
   })
     .then((res) => {
@@ -434,7 +432,7 @@ function login(e) {
 
     headers: {
       "Content-Type": "application/json",
-      mode:'cors'
+      mode: "cors",
     },
   })
     .then((res) => {
@@ -454,7 +452,7 @@ function fetchData(username, token) {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
-      mode:'cors',
+      mode: "cors",
     },
   })
     .then((res) => {

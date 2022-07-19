@@ -173,7 +173,7 @@ img {
   box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
   -webkit-box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
   -moz-box-shadow: -1px 1px 32px 3px rgba(40, 40, 57, 0.77);
-
+   z-index: 9999;
   display: none;
   border: 1px solid #0d1418;
 }

@@ -6,9 +6,7 @@ products.forEach(function (prod) {
     try {
       // let movie_name=document.getElementById("movie-name").value
       let res1 = await fetch(
-        `https://api.themoviedb.org/3//movie/${prod.id}?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-       
-          
+        `https://api.themoviedb.org/3//movie/${prod.id}?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`
       );
       // let res1=await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
       // let data1=await res1.json()
@@ -58,14 +56,13 @@ function showMovies(product) {
   poster.style.height = "100%";
   div.append(poster);
   div2.append(mv_title, genre, lang, runtime, mv_rating, overview);
-  slidebar.style.position="relative"
+  slidebar.style.position = "relative";
 
   slidebar.append(div, div2);
   slidebar.style.width = "98%";
-  div2.style.fontWeight="600"
-  div2.style.paddingLeft="10px"
-  div2.classList.add("movieDetails")
-  
+  div2.style.fontWeight = "600";
+  div2.style.paddingLeft = "10px";
+  div2.classList.add("movieDetails");
 }
 
 // showMovie(products)
@@ -76,8 +73,7 @@ async function searchMovie() {
   try {
     let movie_name = document.getElementById("movie-name").value;
     let res = await fetch(
-      `https://www.omdbapi.com/?apikey=8a493bfd&s=${movie_name}`,
-      
+      `https://www.omdbapi.com/?apikey=8a493bfd&s=${movie_name}`
     );
     // let res1=await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`)
     // let data1=await res1.json()
@@ -92,20 +88,16 @@ async function searchMovie() {
 async function defaultMovie() {
   try {
     let res1 = await fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      
+      `https://api.themoviedb.org/3/movie/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`
     );
     let res2 = await fetch(
-      `https://api.themoviedb.org/3/tv/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      
+      `https://api.themoviedb.org/3/tv/popular?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`
     );
     let res3 = await fetch(
-      `https://api.themoviedb.org/3/movie/top_rated?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-      
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`
     );
     let res4 = await fetch(
-      `https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`,
-     
+      `https://api.themoviedb.org/3/movie/upcoming/?api_key=ac0e095d5ca7ec68c7406d38019b52fa&language=en-US`
     );
 
     let data1 = await res1.json();
@@ -278,7 +270,7 @@ function showMovie(prod) {
 
   if (prod == undefined) {
     let giferr = document.createElement("img");
-    giferr.style.width="99%"
+    giferr.style.width = "99%";
     giferr.src =
       "https://miro.medium.com/max/1400/1*zBFBJktPD3_z0S_35kO5Hg.gif";
     searchDropdown.append(giferr);
@@ -350,6 +342,13 @@ function showMovie(prod) {
   });
 }
 
+window.addEventListener("click", function (e) {
+  var x = document.querySelector("#search-dropdown");
+  if (event.target != document.querySelector(".search-drop")) {
+    x.style.display = "none";
+  }
+});
+
 //debounce
 var timerid;
 
@@ -412,96 +411,92 @@ var form = document.getElementById("signup-form");
 
 //login &signup
 function signup(e) {
-    e.preventDefault();
-    let userdata = {
-      name: form.name.value,
-      email: form.name.value,
-      password: form.password.value,
-      username: form.username.value,
-      description: form.description.value,
-      mobile: form.mobile.value,
-    };
-    userdata = JSON.stringify(userdata);
-    fetch("http://masai-api-mocker.herokuapp.com/auth/register", {
-      method: "POST",
-      body: userdata,
-      headers: {
-        "Content-Type": "application/json",
-        mode:'cors'
-  
-       
-      },
+  e.preventDefault();
+  let userdata = {
+    name: form.name.value,
+    email: form.name.value,
+    password: form.password.value,
+    username: form.username.value,
+    description: form.description.value,
+    mobile: form.mobile.value,
+  };
+  userdata = JSON.stringify(userdata);
+  fetch("http://masai-api-mocker.herokuapp.com/auth/register", {
+    method: "POST",
+    body: userdata,
+    headers: {
+      "Content-Type": "application/json",
+      mode: "cors",
+    },
+  })
+    .then((res) => {
+      return res.json();
     })
-      .then((res) => {
-        return res.json();
-      })
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
-  
-  function login(e) {
-    e.preventDefault();
-    let form1 = document.getElementById("login-form");
-    let userdata = {
-      username: form1.username2.value,
-      password: form1.password2.value,
-    };
-    let data_to_send = JSON.stringify(userdata);
-  
-    fetch("http://masai-api-mocker.herokuapp.com/auth/login", {
-      method: "POST",
-      body: data_to_send,
-  
-      headers: {
-        "Content-Type": "application/json",
-        mode:'cors'
-  
-      },
+    .then((res) => {
+      console.log(res);
     })
-      .then((res) => {
-        return res.json();
-      })
-      .then((res) => {
-        console.log(res);
-        fetchData(userdata.username, res.token);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
-  
-  function fetchData(username, token) {
-    fetch(`http://masai-api-mocker.herokuapp.com/user/${username}`, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-        mode:'cors'
-  
-      },
+    .catch((err) => {
+      console.log(err);
+    });
+}
+
+function login(e) {
+  e.preventDefault();
+  let form1 = document.getElementById("login-form");
+  let userdata = {
+    username: form1.username2.value,
+    password: form1.password2.value,
+  };
+  let data_to_send = JSON.stringify(userdata);
+
+  fetch("http://masai-api-mocker.herokuapp.com/auth/login", {
+    method: "POST",
+    body: data_to_send,
+
+    headers: {
+      "Content-Type": "application/json",
+      mode: "cors",
+    },
+  })
+    .then((res) => {
+      return res.json();
     })
-      .then((res) => {
-        return res.json();
-      })
-      .then((res) => {
-        console.log(res);
-        console.log(res.name);
-        if (res.name != "") {
-          let subBtn = document.getElementById("login-btn");
-          subBtn.innerText = "Hello!," + " " + res.name;
-          subBtn.style.fontSize = "14px";
-          subBtn.style.fontWeight = "300";
-          let signupBtn = document.getElementById("signup-btn");
-          signupBtn.style.display = "none";
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
+    .then((res) => {
+      console.log(res);
+      fetchData(userdata.username, res.token);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+
+function fetchData(username, token) {
+  fetch(`http://masai-api-mocker.herokuapp.com/user/${username}`, {
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+      mode: "cors",
+    },
+  })
+    .then((res) => {
+      return res.json();
+    })
+    .then((res) => {
+      console.log(res);
+      console.log(res.name);
+      if (res.name != "") {
+        let subBtn = document.getElementById("login-btn");
+        subBtn.innerText = "Hello!," + " " + res.name;
+        subBtn.style.fontSize = "14px";
+        subBtn.style.fontWeight = "300";
+        let signupBtn = document.getElementById("signup-btn");
+        signupBtn.style.display = "none";
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
 function homepage() {
   window.location.href = "movie3.html";
 }
