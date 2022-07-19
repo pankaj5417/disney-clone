@@ -36,17 +36,17 @@ A mini project of disney-hotstar made by me.
 ### Website Flow
 
 
-    ![main-page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
+    ![mainpage](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
     
-    ![main-page2](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
+    ![mainpage2](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
         
-    ![main-page3](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6982).png?raw=true)
+    ![mainpage3](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6982).png?raw=true)
     
-    ![main-page4](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6980).png?raw=true)
+    ![mainpage4](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6980).png?raw=true)
     
-    ![main-page5](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6983).png?raw=true)
+    ![mainpage5](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6983).png?raw=true)
     
     
-    ![main-page6](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6984).png?raw=true)
+    ![mainpage6](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6984).png?raw=true)
 
 
