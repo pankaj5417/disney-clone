@@ -39,12 +39,11 @@ A mini project of disney-hotstar made by me.
     ![mainpage](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
     
    
-    
-    ![mainpage](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
-        
     ![mainpage3](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6982).png?raw=true)
     
+    
     ![mainpage4](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6980).png?raw=true)
+    
     
     ![mainpage5](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6983).png?raw=true)
     
