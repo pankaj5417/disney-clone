@@ -1,25 +1,25 @@
-### disney hotstar Clone
+## disney hotstar Clone
 
 A mini project of disney-hotstar made by me.
 
-### Technologies Used :
+## Technologies Used :
 * HTML
 * CSS
 * JavaScript
 
 
-### Functional Things :
+## Functional Things :
 * User Signup Page.
-* User Login Page.
-* Products Page.
-* All types of Sort/Filter Functionality.
-* Add to cart/Quick view Button.
-* Multiple Images view on Hovering over images on Products page & Quick view Page.
+* User Login Page
+* Movie Landing page
+* Movie details page
+* debouncing 
 
 
-### Responsive Pages
 
-
+## Responsive Pages
+* Landing Page
+* Movie Details Page
 
 ### Getting Started :
 
