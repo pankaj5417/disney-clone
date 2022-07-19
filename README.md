@@ -1,14 +1,14 @@
-# Clone of disney hotstar
+### disney hotstar Clone
 
 A mini project of disney-hotstar made by me.
 
-## Technologies Used :
+### Technologies Used :
 * HTML
 * CSS
 * JavaScript
 
 
-## Functional Things :
+### Functional Things :
 * User Signup Page.
 * User Login Page.
 * Products Page.
@@ -21,7 +21,7 @@ A mini project of disney-hotstar made by me.
 
 
 
-## Getting Started :
+### Getting Started :
 
 
 ### Prerequisites 
@@ -33,14 +33,14 @@ A mini project of disney-hotstar made by me.
     ``` 
     git clone https://github.com/pankaj5417/disney-clone
     ```
-## Website Flow
+### Website Flow
 
-### Landing page
+*   
     ![mainpage](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
     
-### movie Details page    
+   
     
-    ![mainpage2](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
+    ![mainpage](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
         
     ![mainpage3](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6982).png?raw=true)
     
