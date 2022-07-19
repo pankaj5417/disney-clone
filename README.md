@@ -2,10 +2,6 @@
 
 A mini project of disney-hotstar made by me.
 
-
-
-![Clone of disney](https://miro.medium.com/max/875/1*9_Dsv9Wl1PStg6CtJnJFZg.jpeg)
-
 ## Technologies Used :
 * HTML
 * CSS
@@ -42,15 +38,15 @@ A mini project of disney-hotstar made by me.
 
     ![main-page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
     
-        ![main-page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
+    ![main-page2](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6975).png?raw=true)
         
-    ![main-page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6982).png?raw=true)
+    ![main-page3](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6982).png?raw=true)
     
-    ![main-page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6980).png?raw=true)
+    ![main-page4](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6980).png?raw=true)
     
-    ![main-page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6983).png?raw=true)
+    ![main-page5](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6983).png?raw=true)
     
     
-    ![main-page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6984).png?raw=true)
+    ![main-page6](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6984).png?raw=true)
 
 
